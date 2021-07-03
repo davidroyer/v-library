@@ -1,6 +1,6 @@
 <template>
   <button
-    class="btn-indigo"
+    class="btn-blue"
     @click="$emit('clicked')"
   >{{label}}</button>
 </template>
@@ -19,7 +19,7 @@ export default {
 
 <style lang="postcss">
 
-  .btn-indigo {
-    @apply py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+  .btn-blue {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
 </style>

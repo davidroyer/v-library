@@ -1,22 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
-  <VButton @clicked="handleClick" label="My Button"/>
-  <VBlock/>
+  <VButton @clicked="handleClick" label="My Button" />
+
+
+  <VBlock />
 </template>
 
-<script setup>
-// import HelloWorld from './components/HelloWorld.vue'
-// import VButton from './components/VButton.vue'
-
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
-</script>
-
 <script>
+import { AcademicCapIcon } from '@heroicons/vue/solid'
 
 export default {
-
+  components: { AcademicCapIcon },
   methods: {
     handleClick () {
       console.log('CLICKED')
@@ -27,12 +22,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 10px;
+  }
 </style>
