@@ -1,17 +1,21 @@
 <template>
   <div class="v-block">
-    Basic Div new
+    <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" />
+
+    <div>Basic Div new</div>
   </div>
 </template>
 
 <script>
-export default {
+import { AcademicCapIcon } from '@heroicons/vue/solid'
 
+export default {
+  components: { AcademicCapIcon },
 }
 </script>
 
 <style lang="postcss">
-.v-block {
-  @apply p-5 my-5 text-xl font-semibold bg-yellow-200
-}
+  .v-block {
+    @apply p-5 my-5 text-xl font-semibold bg-yellow-200;
+  }
 </style>
