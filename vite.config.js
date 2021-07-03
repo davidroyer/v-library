@@ -1,13 +1,18 @@
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import Vue from '@vitejs/plugin-vue';
+import Icons from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components';
 import { ViteAliases } from 'vite-aliases';
 import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), ViteAliases(), ViteComponents()],
-
+  plugins: [
+    Vue(),
+    Icons(),
+    ViteAliases(),
+    ViteComponents()
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/library.js'),
@@ -15,10 +20,10 @@ export default defineConfig({
     },
 
     rollupOptions: {
-      external: ['vue'],
+      external: ['Vue'],
       output: {
         globals: {
-          vue: 'Vue'
+          Vue: 'Vue'
         }
       }
     }
