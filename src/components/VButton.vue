@@ -3,13 +3,13 @@
     class="btn btn-blue"
     @click="$emit('clicked')"
   >
-  <icon-account-box class="w-6 h-6 mr-2"/>
+  <!-- <icon-account-box class="w-6 h-6 mr-2"/> -->
   {{label}}
   </button>
 </template>
 
 <script>
-import IconAccountBox from '/@vite-icons/mdi/account-box'
+// import IconAccountBox from '/@vite-icons/mdi/account-box'
 
 export default {
   props: {
@@ -18,7 +18,7 @@ export default {
       default: 'Button Text'
     }
   },
-  components: { IconAccountBox },
+  // components: { IconAccountBox },
   emits: ['clicked']
 }
 </script>
