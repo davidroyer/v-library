@@ -27,5 +27,8 @@ export default defineConfig({
         }
       }
     }
-  }
+  },
+  optimizeDeps: {
+    exclude: ['@heroicons/vue']
+  },
 });
