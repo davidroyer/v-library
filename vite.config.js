@@ -1,16 +1,19 @@
-import { defineConfig } from 'vite';
-import Vue from '@vitejs/plugin-vue';
-import Icons from 'vite-plugin-icons'
-import ViteComponents from 'vite-plugin-components';
-import { ViteAliases } from 'vite-aliases';
-import path from 'path';
+import { defineConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
+// import Icons from 'vite-plugin-icons'
+import ViteComponents from 'vite-plugin-components'
+import { ViteAliases } from 'vite-aliases'
+import svgLoader from 'vite-svg-loader'
+import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     Vue(),
-    Icons(),
+    // Icons(),
     ViteAliases(),
+    svgLoader(),
+
     ViteComponents()
   ],
   build: {
@@ -30,5 +33,5 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ['@heroicons/vue']
-  },
-});
+  }
+})

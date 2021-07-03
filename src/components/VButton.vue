@@ -25,7 +25,7 @@ export default {
 
 <style lang="postcss">
   .btn {
-    @apply inline-flex justify-center items-center y-2 px-4 font-semibold rounded-lg shadow
+    @apply inline-flex justify-center items-center p-2 px-4 font-semibold rounded-lg shadow
   }
 
   .btn-blue {
