@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "name": "@droyer/v-library",
   "files": [
     "dist"
@@ -23,6 +23,8 @@
   },
   "devDependencies": {
     "@iconify/json": "^1.1.369",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/eslint-config-prettier": "^6.0.0",

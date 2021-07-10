@@ -1,16 +1,16 @@
 <template>
   <div class="v-block">
     <!-- <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" /> -->
-<BeakerIcon class="block w-20 h-20 mx-auto mb-6"/>
+    <BeakerIcon class="w-5 h-5 text-blue-500" />
     <div>Basic Div new</div>
   </div>
 </template>
 
 <script>
-// import { AcademicCapIcon } from '@heroicons/vue/solid'
-import BeakerIcon from './../assets/svgs/beaker.svg'
+import { BeakerIcon } from '@heroicons/vue/solid'
 
 export default {
+  name: 'VBlock',
   components: { BeakerIcon },
 }
 </script>
