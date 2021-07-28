@@ -12,6 +12,7 @@ import commonjs from '@rollup/plugin-commonjs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+
   plugins: [
     Vue(),
     resolve({
@@ -52,8 +53,8 @@ export default defineConfig({
       //   ],
       // ]
     }
+  },
+  optimizeDeps: {
+    include: ['@heroicons/vue/solid']
   }
-  // optimizeDeps: {
-  //   exclude: ['@heroicons/vue']
-  // }
 })
