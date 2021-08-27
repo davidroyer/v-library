@@ -34,26 +34,12 @@ export default defineConfig({
     },
 
     rollupOptions: {
-      external: ['vue']
-
-      // plugins: [
-
-      //   postVue: [
-      //     resolve({
-      //       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
-      //     }),
-      //     // Process only `<style module>` blocks.
-      //     PostCSS({
-      //       modules: {
-      //         generateScopedName: '[local]___[hash:base64:5]',
-      //       },
-      //       include: /&module=.*\.css$/,
-      //     }),
-      //     // Process all `<style>` blocks except `<style module>`.
-      //     PostCSS({ include: /(?<!&module=.*)\.css$/ }),
-      //     commonjs(),
-      //   ],
-      // ]
+      external: ['vue'],
+      output: {
+        globals: {
+          Vue: 'Vue'
+        }
+      }
     }
   },
   optimizeDeps: {

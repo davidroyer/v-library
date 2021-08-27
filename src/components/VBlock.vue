@@ -1,28 +1,39 @@
 <template>
   <div class="v-block">
+<<<<<<< HEAD
     <!-- <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" /> -->
     <BeakerIcon class="w-5 h-5 text-blue-500" />
     <div>
       <pre>{{todoData}}</pre>
     </div>
+=======
+    <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" />
+
+    <div>Basic Div new</div>
+    <h2>Todo Data</h2>
+    <pre>{{todo}}</pre>
+>>>>>>> plugin-icons
   </div>
 </template>
 
 <script>
-import { BeakerIcon } from '@heroicons/vue/solid'
+import { AcademicCapIcon } from '@heroicons/vue/solid'
 import axios from 'axios'
 
 export default {
-  name: 'VBlock',
-  components: { BeakerIcon },
+  components: { AcademicCapIcon },
 
   data: () => ({
-    todoData: {}
+    todo: {}
   }),
 
+  async mounted () {
+    console.log('FROM MOUNTED');
 
-  mounted() {
-    const {data} = axios.get('https://jsonplaceholder.typicode.com/todos/1')
+    const { data } = await axios.get('https://jsonplaceholder.typicode.com/todos/1')
+    console.log('data', data);
+
+    this.todo = data
   }
 }
 </script>
