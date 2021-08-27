@@ -1,18 +1,10 @@
 <template>
   <div class="v-block">
-<<<<<<< HEAD
-    <!-- <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" /> -->
-    <BeakerIcon class="w-5 h-5 text-blue-500" />
-    <div>
-      <pre>{{todoData}}</pre>
-    </div>
-=======
     <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" />
 
     <div>Basic Div new</div>
     <h2>Todo Data</h2>
     <pre>{{todo}}</pre>
->>>>>>> plugin-icons
   </div>
 </template>
 
