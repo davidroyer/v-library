@@ -1,7 +1,9 @@
 <template>
   <div class="v-block">
     <AcademicCapIcon class="block w-20 h-20 mx-auto mb-6 text-blue-500" />
-
+    <hr />
+    <icon-accessibility />
+    <icon-account-box />
     <div>Basic Div new</div>
     <h2>Todo Data</h2>
     <pre>{{todo}}</pre>
@@ -10,10 +12,12 @@
 
 <script>
 import { AcademicCapIcon } from '@heroicons/vue/solid'
+import IconAccessibility from 'virtual:vite-icons/carbon/accessibility'
+import IconAccountBox from 'virtual:vite-icons/mdi/account-box'
 import axios from 'axios'
 
 export default {
-  components: { AcademicCapIcon },
+  components: { AcademicCapIcon, IconAccessibility, IconAccountBox },
 
   data: () => ({
     todo: {}
