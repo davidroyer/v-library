@@ -8,6 +8,8 @@
 </template>
 
 <script>
+    console.log('FROM APP');
+
 import { AcademicCapIcon } from '@heroicons/vue/solid'
 
 export default {
