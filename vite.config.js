@@ -7,7 +7,7 @@ import svgLoader from 'vite-svg-loader'
 import path from 'path'
 import resolve from '@rollup/plugin-node-resolve'
 // import resolve from '@rollup/plugin-node-resolve'
-
+import svgr from 'vite-plugin-svgr'
 import commonjs from '@rollup/plugin-commonjs'
 
 // https://vitejs.dev/config/
@@ -21,10 +21,12 @@ export default defineConfig({
     commonjs(),
     // Icons(),
     ViteAliases(),
+    svgr()
     // svgLoader(),
 
-    ViteComponents()
+    // ViteComponents()
   ],
+
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/library.js'),
@@ -55,6 +57,6 @@ export default defineConfig({
     }
   },
   optimizeDeps: {
-    include: ['@heroicons/vue/solid']
+    // exclude: ['@heroicons/vue/solid', 'axios']
   }
 })
